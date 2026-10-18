@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NINETY — 90 Web Works by Claude Code</title>
+<meta name="description" content="自宅GPUサーバー上のClaude Codeが直列で作り上げる90本のWeb作品ギャラリー">
+<meta name="theme-color" content="#101725">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBF6EC;--ink:#17151F;--teal:#12B5A8;--teal-d:#0E8E84;--teal-l:#7BE0D6;--gold:#F4C544;--coral:#EF8E6E;--mute:#6B6776}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New",sans-serif;line-height:1.7}
+header{padding:64px 24px 40px;text-align:center}
+h1{font-family:"Space Grotesk","Zen Kaku Gothic New",sans-serif;font-size:clamp(3rem,10vw,5.5rem);letter-spacing:.04em}
+h1 span{color:var(--teal)}
+.sub{font-family:"JetBrains Mono",monospace;color:var(--mute);font-size:.9rem;margin-top:8px}
+.progress{max-width:640px;margin:28px auto 0;padding:0 24px}
+.bar{height:10px;background:#eee5d2;border-radius:5px;overflow:hidden}
+.bar i{display:block;height:100%;width:49%;background:linear-gradient(90deg,var(--teal),var(--teal-l));border-radius:5px;transition:width .5s}
+.progress p{font-family:"JetBrains Mono",monospace;font-size:.85rem;color:var(--mute);margin-top:6px}
+main{max-width:1100px;margin:0 auto;padding:24px}
+section{margin:48px 0}
+h2{font-family:"Space Grotesk","Zen Kaku Gothic New",sans-serif;font-size:1.8rem;border-left:6px solid var(--gold);padding-left:14px}
+h2 small{color:var(--teal-d);font-size:1rem;font-family:"JetBrains Mono",monospace;margin-left:10px}
+.sec-desc{color:var(--mute);margin:6px 0 18px;padding-left:20px;font-size:.92rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.card{display:block;background:#fff;border:1px solid #eee2c8;border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:.18s;position:relative}
+a.card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(18,181,168,.18);border-color:var(--teal)}
+.thumb{aspect-ratio:16/10;background:#101725;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:.3s}
+a.card:hover .thumb img{transform:scale(1.05)}
+.thumb.ph{background:repeating-linear-gradient(45deg,#f0e9d8,#f0e9d8 10px,#eee2c8 10px,#eee2c8 20px)}
+.card .body{padding:16px 18px}
+.card .num{font-family:"JetBrains Mono",monospace;font-size:.75rem;color:var(--coral)}
+.card h3{font-size:1.05rem;margin:4px 0 6px}
+.card p{font-size:.8rem;color:var(--mute);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tag{display:inline-block;margin-top:10px;font-size:.72rem;font-family:"JetBrains Mono",monospace;padding:3px 10px;border-radius:99px;background:#f0e9d8;color:var(--mute)}
+.tag.done{background:var(--teal);color:#fff}
+.card.pending{opacity:.55}
+footer{text-align:center;padding:48px 24px;color:var(--mute);font-size:.85rem}
+footer a{color:var(--teal-d)}
+</style>
+</head>
+<body>
+<header>
+  <h1>NINE<span>TY</span></h1>
+  <p class="sub">web works — built serially by Claude Code (Fable 5), served live at *.sample.1qaz.jp</p>
+  <div class="progress"><div class="bar"><i></i></div><p>44 / 90 works completed</p></div>
+</header>
+<main>
+<section><h2>モダンWebサイト <small>23/30</small></h2><p class="sec-desc">30の架空ブランド・店舗・サービスのサイトデザイン</p><div class="grid">
+<a class="card" href="https://masafykun.github.io/cafe-kissa/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/cafe-kissa/screenshot.png" alt="純喫茶「琥珀」"></div><div class="body"><span class="num">#01</span><h3>純喫茶「琥珀」</h3><p>レトロモダンな純喫茶のLP。メニュー、こだわり、店舗情報。セピア×深緑の落ち着いた配色。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/arch-studio/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/arch-studio/screenshot.png" alt="建築設計事務所 MINKA"></div><div class="body"><span class="num">#02</span><h3>建築設計事務所 MINKA</h3><p>余白を活かしたミニマルポートフォリオ。作品グリッド、設計哲学、問い合わせ。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/saas-metrics/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/saas-metrics/screenshot.png" alt="SaaS分析ツール「Metrica」"></div><div class="body"><span class="num">#03</span><h3>SaaS分析ツール「Metrica」</h3><p>ダークモードのモダンSaaS LP。機能、料金表、FAQ、CTA。グラデーション使い。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/photo-folio/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/photo-folio/screenshot.png" alt="写真家ポートフォリオ"></div><div class="body"><span class="num">#04</span><h3>写真家ポートフォリオ</h3><p>フルスクリーンギャラリー風。CSSアートで作品を抽象表現。ライトボックス演出。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/sushi-ryotei/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/sushi-ryotei/screenshot.png" alt="鮨 天雅"></div><div class="body"><span class="num">#05</span><h3>鮨 天雅</h3><p>和モダンの高級鮨店。縦書き見出し、おまかせコース紹介、予約導線。黒×金。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/tech-conf/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/tech-conf/screenshot.png" alt="DevSummit Tokyo 2026"></div><div class="body"><span class="num">#06</span><h3>DevSummit Tokyo 2026</h3><p>テックカンファレンス。タイムテーブル、スピーカー、チケット。大胆なタイポグラフィ。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/yoga-studio/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/yoga-studio/screenshot.png" alt="ヨガスタジオ Luna"></div><div class="body"><span class="num">#07</span><h3>ヨガスタジオ Luna</h3><p>柔らかいパステル配色。クラススケジュール、料金、講師紹介、体験予約。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/fintech-pay/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/fintech-pay/screenshot.png" alt="決済アプリ「PayLeaf」"></div><div class="body"><span class="num">#08</span><h3>決済アプリ「PayLeaf」</h3><p>信頼感のあるブルー系フィンテックLP。機能、セキュリティ、導入企業ロゴ。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/fashion-mode/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/fashion-mode/screenshot.png" alt="ファッションブランド VOILE"></div><div class="body"><span class="num">#09</span><h3>ファッションブランド VOILE</h3><p>エディトリアル風。大きな余白、ルックブック、シーズンコレクション。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/travel-island/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/travel-island/screenshot.png" alt="離島専門旅行社「島旅」"></div><div class="body"><span class="num">#10</span><h3>離島専門旅行社「島旅」</h3><p>没入感のあるヒーロー、ツアープラン、体験談。CSSで海のグラデーション表現。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/craft-beer/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/craft-beer/screenshot.png" alt="クラフトビール醸造所 HOP WORKS"></div><div class="body"><span class="num">#11</span><h3>クラフトビール醸造所 HOP WORKS</h3><p>個性的なイラスト調。ビールラインナップ、醸造工程、タップルーム案内。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/dental-smile/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/dental-smile/screenshot.png" alt="スマイル歯科クリニック"></div><div class="body"><span class="num">#12</span><h3>スマイル歯科クリニック</h3><p>清潔感のあるホワイト×ミント。診療案内、医師紹介、Web予約導線。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/coworking-hub/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/coworking-hub/screenshot.png" alt="コワーキングスペース BASE10"></div><div class="body"><span class="num">#13</span><h3>コワーキングスペース BASE10</h3><p>都会的なデザイン。料金プラン、設備、CSSで描くフロアマップ。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/wedding-plan/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/wedding-plan/screenshot.png" alt="ウェディングプランナー Blanc"></div><div class="body"><span class="num">#14</span><h3>ウェディングプランナー Blanc</h3><p>エレガント。プラン、ギャラリー、当日までの流れ、FAQ。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/code-school/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/code-school/screenshot.png" alt="プログラミングスクール CodeClimb"></div><div class="body"><span class="num">#15</span><h3>プログラミングスクール CodeClimb</h3><p>カリキュラム、料金、卒業生の声、他社比較表。学習ロードマップ図。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/game-studio/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/game-studio/screenshot.png" alt="インディーゲームスタジオ 8bit森"></div><div class="body"><span class="num">#16</span><h3>インディーゲームスタジオ 8bit森</h3><p>ピクセルアート調。作品一覧、開発ブログ風セクション、チーム紹介。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/flower-atelier/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/flower-atelier/screenshot.png" alt="フラワーアトリエ 花音"></div><div class="body"><span class="num">#17</span><h3>フラワーアトリエ 花音</h3><p>季節の花束、レッスン案内、配達エリア。ボタニカルなCSSアート。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/law-office/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/law-office/screenshot.png" alt="ひかり法律事務所"></div><div class="body"><span class="num">#18</span><h3>ひかり法律事務所</h3><p>堅実なネイビー基調。取扱分野、弁護士紹介、相談の流れ、アクセス。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/music-fest/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/music-fest/screenshot.png" alt="野外フェス SOUND HORIZON"></div><div class="body"><span class="num">#19</span><h3>野外フェス SOUND HORIZON</h3><p>サイケデリックなグラデーション。ラインナップ、タイムテーブル、アクセス。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/ai-startup/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/ai-startup/screenshot.png" alt="AIスタートアップ Synapse"></div><div class="body"><span class="num">#20</span><h3>AIスタートアップ Synapse</h3><p>未来的デザイン。プロダクト、技術説明、採用情報。Canvasパーティクル背景可。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/bakery-kobo/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/bakery-kobo/screenshot.png" alt="天然酵母ベーカリー 麦香"></div><div class="body"><span class="num">#21</span><h3>天然酵母ベーカリー 麦香</h3><p>温かみのある生成り色。パン一覧、焼き上がり時間表、素材のこだわり。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/estate-home/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/estate-home/screenshot.png" alt="注文住宅 木住まい工房"></div><div class="body"><span class="num">#22</span><h3>注文住宅 木住まい工房</h3><p>施工事例、モデルハウス見学、資料請求。上質なグレー×木目調。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/mono-blog/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/mono-blog/screenshot.png" alt="ミニマル個人ブログ「余白」"></div><div class="body"><span class="num">#30</span><h3>ミニマル個人ブログ「余白」</h3><p>タイポグラフィ主体。記事リスト、about、ダークモード切替付き。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#23</span><h3>24時間ジム IRONBASE</h3><p>エネルギッシュな黒×赤。料金、マシン紹介、体験予約、Before/After。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#24</span><h3>独立系書店 灯書房</h3><p>文芸的な佇まい。今月の選書棚、イベント、店主コラム。紙の質感背景。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#25</span><h3>ペットサロン ふわり</h3><p>ポップで可愛い配色。コース料金、ビフォーアフター、予約カレンダー風UI。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#26</span><h3>宇宙旅行社 AstroVoyage</h3><p>SF調ダーク。軌道周回/月周回プラン、訓練プログラム、Q&amp;A。星空Canvas可。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#27</span><h3>温泉旅館 山霞</h3><p>和の情緒。客室、温泉、会席料理、宿泊プラン。障子・和紙の質感表現。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#28</span><h3>バーバーショップ EDGE</h3><p>ヴィンテージ調。メニュー、スタイル集、理容師紹介、予約。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#29</span><h3>海洋保護NPO ブルーシップ</h3><p>誠実な報告書調。活動内容、CSSグラフでのデータ可視化、寄付導線。</p><span class="tag">制作予定</span></div></div>
+</div></section>
+<section><h2>WebGLゲーム <small>12/30</small></h2><p class="sec-desc">three.js / 生WebGLによる3Dブラウザゲーム</p><div class="grid">
+<a class="card" href="https://masafykun.github.io/orbit-dodge/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/orbit-dodge/screenshot.png" alt="オービット・ドッジ"></div><div class="body"><span class="num">#01</span><h3>オービット・ドッジ</h3><p>宇宙船で隕石群を回避する3Dゲーム。徐々に加速、スコアとベスト記録。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/neon-racer/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/neon-racer/screenshot.png" alt="ネオンレーサー"></div><div class="body"><span class="num">#02</span><h3>ネオンレーサー</h3><p>ネオン輝く都市の無限コースを走るレース。左右移動と加速、障害物回避。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/cube-tower/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/cube-tower/screenshot.png" alt="キューブタワー"></div><div class="body"><span class="num">#03</span><h3>キューブタワー</h3><p>動くブロックをタイミングよく積む3D。ズレた分だけ小さくなる。高さ記録。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/star-shooter/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/star-shooter/screenshot.png" alt="スターシューター"></div><div class="body"><span class="num">#04</span><h3>スターシューター</h3><p>3D縦スクロールシューティング。敵ウェーブ、パワーアップ、ボス。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/gravity-ball/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/gravity-ball/screenshot.png" alt="グラビティボール"></div><div class="body"><span class="num">#05</span><h3>グラビティボール</h3><p>盤面を傾けてボールをゴールへ導く迷路。マウス/タッチで傾き操作。10面。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/lowpoly-glider/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/lowpoly-glider/screenshot.png" alt="ローポリグライダー"></div><div class="body"><span class="num">#06</span><h3>ローポリグライダー</h3><p>ローポリの山岳地帯を滑空しリングをくぐる。気流と失速の緊張感。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/tunnel-rush/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/tunnel-rush/screenshot.png" alt="トンネルラッシュ"></div><div class="body"><span class="num">#07</span><h3>トンネルラッシュ</h3><p>高速で流れるトンネル内の障害物を回避。加速し続ける中毒性重視。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/asteroid-miner/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/asteroid-miner/screenshot.png" alt="小惑星マイナー"></div><div class="body"><span class="num">#08</span><h3>小惑星マイナー</h3><p>小惑星を撃って資源収集、船をアップグレードしていく採掘ゲーム。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/pong-3d/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/pong-3d/screenshot.png" alt="3Dポン"></div><div class="body"><span class="num">#09</span><h3>3Dポン</h3><p>奥行きのある3D空間で対AIパドル戦。ボールの軌道が読みにくい演出。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/voxel-garden/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/voxel-garden/screenshot.png" alt="ボクセルガーデン"></div><div class="body"><span class="num">#10</span><h3>ボクセルガーデン</h3><p>クリックでボクセルを置いて庭を作るサンドボックス。localStorage保存。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/hover-tank/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/hover-tank/screenshot.png" alt="ホバータンク大戦"></div><div class="body"><span class="num">#11</span><h3>ホバータンク大戦</h3><p>アリーナでAI敵と砲撃戦。体力制、爆発エフェクト、ウェーブ制。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/rhythm-cube/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/rhythm-cube/screenshot.png" alt="リズムキューブ"></div><div class="body"><span class="num">#12</span><h3>リズムキューブ</h3><p>流れてくるキューブをタイミングよく叩く音ゲー。WebAudioで音を合成。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#13</span><h3>3Dディノラン</h3><p>障害物をジャンプとスライドで避ける無限ランナーの3D版。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#14</span><h3>プラネットゴルフ</h3><p>小惑星の重力を利用してボールをホールに入れる物理パズルゴルフ。9ホール。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#15</span><h3>ディープダイブ</h3><p>潜水艇で海溝を降りる。酸素管理、障害物、深度記録に挑戦。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#16</span><h3>3Dキャッスルディフェンス</h3><p>迫る敵ウェーブを砲台で迎撃するタワーディフェンス。砲台強化あり。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#17</span><h3>ドローンサーキット</h3><p>チェックポイントを順に通過するドローン操縦。タイム計測とゴースト記録。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#18</span><h3>ブラックホール</h3><p>街のオブジェクトを吸い込んで成長するブラックホール。制限時間スコアアタック。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#19</span><h3>クリスタル洞窟</h3><p>光る洞窟を探索してクリスタルを集める。ポイントライトの美しい演出。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#20</span><h3>スノースラローム</h3><p>旗門を通過しながら滑降するスキー。ミスでタイム加算、3コース。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#21</span><h3>UFOハーベスト</h3><p>UFOのトラクタービームで牧場の牛や作物を吸い上げる。サーチライト演出。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#22</span><h3>メカアリーナ</h3><p>二足歩行メカで対AI近未来アリーナ戦。ブースト移動と射撃。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#23</span><h3>ウェーブサーファー</h3><p>頂点シェーダでうねる波の上をサーフィン。バランス維持とトリック。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#24</span><h3>アースガード</h3><p>地球に降り注ぐ隕石をレーザーで迎撃する防衛ゲーム。都市の耐久制。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#25</span><h3>禅ストーン</h3><p>石を積み上げてバランスを取る癒し系物理パズル。簡易物理を自作。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#26</span><h3>ワープランナー</h3><p>ゲートをくぐるたびに世界の色とルールが変わる無限ランナー。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#27</span><h3>蛍の森</h3><p>夜の森で蛍を集めるアンビエント体験。音と光のヒーリング演出。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#28</span><h3>カートタイムアタック</h3><p>周回コースで自己ベストのゴーストと競うカートレース。ドリフト。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#29</span><h3>軌道パズル</h3><p>衛星の速度と向きを調整して目標軌道に乗せる物理パズル。8ステージ。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#30</span><h3>ドラゴンスカイ</h3><p>ドラゴンで空を滑空し浮遊する宝を集める。上昇気流と滑空の気持ちよさ重視。</p><span class="tag">制作予定</span></div></div>
+</div></section>
+<section><h2>2Dゲーム <small>9/30</small></h2><p class="sec-desc">Canvas 2D / DOMだけで作るブラウザゲーム</p><div class="grid">
+<a class="card" href="https://masafykun.github.io/neon-breakout/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/neon-breakout/screenshot.png" alt="ネオンブレイクアウト"></div><div class="body"><span class="num">#01</span><h3>ネオンブレイクアウト</h3><p>パワーアップ付きブロック崩し。マルチボール、パーティクル演出、面クリア制。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/snake-remix/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/snake-remix/screenshot.png" alt="スネークリミックス"></div><div class="body"><span class="num">#02</span><h3>スネークリミックス</h3><p>加速・短縮などアイテム入りスネーク。壁抜けモード切替、ベスト記録。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/drop-blocks/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/drop-blocks/screenshot.png" alt="ドロップブロックス"></div><div class="body"><span class="num">#03</span><h3>ドロップブロックス</h3><p>落ちものパズル。回転・ホールド・ライン消し・レベルアップ。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/fusion-2048/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/fusion-2048/screenshot.png" alt="フュージョン2048"></div><div class="body"><span class="num">#04</span><h3>フュージョン2048</h3><p>スワイプ/矢印キー対応の2048。アンドゥ1回、ベストスコア保存。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/mine-field/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/mine-field/screenshot.png" alt="マインフィールド"></div><div class="body"><span class="num">#05</span><h3>マインフィールド</h3><p>マインスイーパ。初手安全保証、旗立て、タイマー、3難易度。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/memory-zoo/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/memory-zoo/screenshot.png" alt="メモリーズー"></div><div class="body"><span class="num">#06</span><h3>メモリーズー</h3><p>動物絵文字の神経衰弱。手数とタイム記録、2人交代プレイ対応。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/type-storm/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/type-storm/screenshot.png" alt="タイプストーム"></div><div class="body"><span class="num">#07</span><h3>タイプストーム</h3><p>降ってくる単語をローマ字入力で打ち落とすタイピングゲーム。レベル制。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/flappy-tori/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/flappy-tori/screenshot.png" alt="フラッピートリ"></div><div class="body"><span class="num">#08</span><h3>フラッピートリ</h3><p>タップ/スペースで羽ばたく横スクロール。土管通過数スコア、ベスト保存。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<a class="card" href="https://masafykun.github.io/jump-up/"><div class="thumb"><img loading="lazy" src="https://masafykun.github.io/jump-up/screenshot.png" alt="ジャンプアップ"></div><div class="body"><span class="num">#09</span><h3>ジャンプアップ</h3><p>足場を登り続ける縦スクロールジャンプ。左右移動、高度スコア。</p><span class="tag done">&#9654; 公開中</span></div></a>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#10</span><h3>モグラパニック</h3><p>モグラ叩き。爆弾フェイクあり、コンボ制、30秒スコアアタック。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#11</span><h3>ピンドロップ</h3><p>回転する円盤にピンを刺していく。既存ピンに当たると失敗。レベル制。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#12</span><h3>倉庫番ネコ</h3><p>猫が魚箱を押す倉庫番。15レベル、手数記録、アンドゥ、クリア演出。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#13</span><h3>クロンダイク</h3><p>定番ソリティア。ドラッグ&amp;ドロップ、ダブルクリック自動移動、勝利演出。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#14</span><h3>リバーシAI</h3><p>3段階の強さのAIと対戦するリバーシ。打てる場所ヒント、形勢グラフ。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#15</span><h3>五目戦</h3><p>対AIの五目並べ。15x15盤、勝利ライン演出、先手後手選択。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#16</span><h3>数独道場</h3><p>3難易度の数独。メモ機能、ミス検出、タイマー、自動生成。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#17</span><h3>ワードハント</h3><p>ひらがなグリッドから日本語の単語を探す。制限時間、辞書内蔵。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#18</span><h3>アストロブラスト</h3><p>慣性のある宇宙船で隕石を撃つ2Dシューティング。ワープ、UFO出現。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#19</span><h3>スカイタワー</h3><p>クレーンから部屋を落として積み上げるタワー建設。風の影響、揺れ。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#20</span><h3>フィッシュマスター</h3><p>タイミングで魚を釣る釣りゲーム。魚図鑑、レア魚、深さ選択。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#21</span><h3>ビートタップ</h3><p>4レーンのリズムゲーム。WebAudioでビート合成、判定とコンボ。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#22</span><h3>メイズエスケープ</h3><p>自動生成迷路からの脱出。視界制限の霧、最短手数記録、3サイズ。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#23</span><h3>ターゲットレンジ</h3><p>動く的を撃つ射的ゲーム。連射制限、ボーナス的、精度評価。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#24</span><h3>アイドルパン屋</h3><p>クリッカー系放置ベーカリー。設備投資、自動生産、オフライン収益。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#25</span><h3>ニッポンクイズ</h3><p>日本の雑学4択クイズ100問内蔵。ジャンル選択、連続正解ボーナス。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#26</span><h3>エアホッケー</h3><p>対AIエアホッケー。マウス/タッチでマレット操作、7点先取、難易度3段階。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#27</span><h3>ワームアリーナ</h3><p>餌を食べて成長するミミズでAI敵と生存競争。加速ダッシュ。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#28</span><h3>ピクセルヴォールト</h3><p>2Dアクションプラットフォーマー。コイン収集、トゲ、動く床、8ステージ。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#29</span><h3>カードクラッシュ</h3><p>攻撃/防御/魔法のシンプルカードバトル対AI。デッキ3種、必殺コンボ。</p><span class="tag">制作予定</span></div></div>
+<div class="card pending"><div class="thumb ph"></div><div class="body"><span class="num">#30</span><h3>ジャンケンクエスト</h3><p>じゃんけんで進むすごろくRPG。HP、必殺技ゲージ、3体のボス。</p><span class="tag">制作予定</span></div></div>
+</div></section>
+</main>
+<footer><p><a href="https://masafy.org">masafy.org</a></p><p>© 2026 masafykun</p></footer>
+</body>
+</html>
